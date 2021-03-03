@@ -25,21 +25,12 @@ export default function Login() {
           <h2 className="text-center mb-4">Login with Google</h2>
           {error && <Alert variant="danger">{error}</Alert>}
           <Form onSubmit={handleSubmit} class="split left">
-            <Form.Group id="email">
-              <Form.Label>Email</Form.Label>
-              <Form.Control type="email" placeholder="Enter Email" ref={emailRef} required />
-            </Form.Group>
-            <Form.Group id="password">
-              <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Enter Password" ref={passwordRef} required />
-            </Form.Group>
+          
             <Button disabled={loading} className="w-100" style={{backgroundColor:"green"}} type="submit">
               <b>Login</b>
             </Button>
           </Form>
-          <div className="w-100 text-center mt-3">
-	  <Link to="/forgot-password"><small class="text-muted">Forgot Password?</small></Link>
-          </div>
+        
         </Card.Body>
       </Card>
       <div className="w-100 text-center mt-2" class="split right">
