@@ -14,7 +14,7 @@ const sections = () => {
         <Router>
             <Switch>
               <Route path="/home" component={Home} />
-              <Route path="/about" component={About} />
+              <Route path="/" component={About} />
               <Route path="/Testimonials" component={Testimonials} />
               <Route path="/Gallery" component={Gallery} />
               <Route path="/contact" component={Contact} />

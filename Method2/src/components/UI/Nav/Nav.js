@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 import Link from '../Link/Link';
+import icon from '../images/logo.png';
+
 
 const Nav = () => {
   const [navClass, setNavClass] = useState('');
@@ -22,10 +24,7 @@ const Nav = () => {
   return (
     <nav className={`navbar navbar-expand-md bg-light ${navClass}`}>
       <div className='container'>
-        <a className='navbar-brand' href='!#'>
-          <span>CROPDARPAN</span>
-          <i className='fas fa-circle ml-1' />
-        </a>
+	      <img src={icon} width="200" height="200"/>
         <div
           className={`navbar-toggler nav-icon ${(() => {
             if (toggeledNav) return 'open';
@@ -56,8 +55,8 @@ const Nav = () => {
               </Link>
             </li>
             <li className='nav-item'>
-              <Link target='testimonials' classes='nav-link'>
-                Testimonials
+              <Link target='review' classes='nav-link'>
+	  	Review
               </Link>
             </li>
             <li className='nav-item'>
