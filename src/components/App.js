@@ -11,15 +11,22 @@ import SignInMethods from "./SignInMethods"
 import PrivateRoute from "./PrivateRoute"
 import ForgotPassword from "./ForgotPassword"
 import UpdateProfile from "./UpdateProfile"
+import { NavigationBar } from './Nav'
 
 function App() {
   return (
+    <div>
+    <NavigationBar/>
+
     <Container
       className="d-flex align-items-center justify-content-center"
       style={{ minHeight: "100vh" }}
     >
+
       <div className="w-100" style={{ maxWidth: "400px" }}>
+
         <Router>
+
           <AuthProvider>
             <Switch>
               <PrivateRoute exact path="/" component={Dashboard} />
@@ -35,6 +42,8 @@ function App() {
         </Router>
       </div>
     </Container>
+    </div>
+
   )
 }
 

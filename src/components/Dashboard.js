@@ -1,7 +1,10 @@
 import React, { useState } from "react"
-import { Card, Button, Alert } from "react-bootstrap"
+import { Card, Button, Alert, Navbar, Nav, NavDropdown, Form, FormControl } from "react-bootstrap"
 import { useAuth } from "../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
+
+
+
 
 export default function Dashboard() {
   const [error, setError] = useState("")
@@ -21,6 +24,8 @@ export default function Dashboard() {
 
   return (
     <>
+  
+
       <Card class="split left">
         <Card.Body>
           <h2 className="text-center mb-4">Profile</h2>
@@ -36,6 +41,7 @@ export default function Dashboard() {
          <b> Log Out</b>
         </Button>
       </div></div>
+
     </>
   )
 }

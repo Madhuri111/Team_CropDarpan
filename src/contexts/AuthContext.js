@@ -27,14 +27,7 @@ export function AuthProvider({ children }) {
   }
 
   function loginViaPhone(phone) {
-    let recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container');
-    // let recaptcha = new firebase.auth.RecaptchaVerifier('recaptcha')
-    // firebase.auth().signInWithPhoneNumber(phone).then(function(e){
-    //   let code = prompt('Enter OTP')
-    //   e.confirm(code).then(function(result){
-    //     console.log(result.user);
-    //   })
-    // })
+    
   }
   
 

@@ -14,7 +14,15 @@ export default function Login() {
   async function handleSubmit(e) {
     e.preventDefault()
     await loginViaPhone(phoneRef.current.value)
-    history.push("/")
+    // var phone =  phoneRef.current.value;
+    // let recaptcha = new firebase.auth.RecaptchaVerifier('recaptcha')
+    // fi rebase.auth().signInWithPhoneNumber(phone, recaptcha).then(function(e){
+    //   let code = prompt('Enter OTP')
+    //   e.confirm(code).then(function(result){
+    //     console.log(result.user);
+    //   })
+    // })
+    // history.push("/")
   
   }
 
@@ -27,7 +35,7 @@ export default function Login() {
           <Form onSubmit={handleSubmit} class="split left">
             <Form.Group id="Phone Number">
               <Form.Label>Phone Number</Form.Label>
-              <Form.Control type="text" placeholder="Enter Phone Number" pattern="[789][0-9]{9}" ref={phoneRef} required />
+              <Form.Control type="text" placeholder="Enter Phone Number"  ref={phoneRef} required />
             </Form.Group>
             
             <Button disabled={loading} style={{backgroundColor:"green"}} className="w-100" type="submit">
