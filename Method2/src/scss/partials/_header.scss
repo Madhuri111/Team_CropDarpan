@@ -23,7 +23,7 @@
       font-size: 1.8rem;
     }
     i {
-      color: #248eff;
+      color: #118000;
       font-size: 0.5rem;
     }
   }}
@@ -44,17 +44,17 @@
     color: #4e4e4e !important;
     font-size: 0.85rem;
     &:hover {
-      color: darken(#248eff, 6%) !important;
+      color: darken(#118000, 6%) !important;
     }
     &.active {
-      color: lighten(#248eff, 5%) !important;
+      color: lighten(#118000, 5%) !important;
     }
     @media (min-width: 768px) {
       padding: 1rem 1rem;
     }
   }
   .top-bar {
-    background-color: #2f4e72;
+    background-color: #118000;
     display: none;
     @media (min-width: 768px) {
       display: block;
