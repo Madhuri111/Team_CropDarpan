@@ -7,9 +7,3 @@ npm install
 
 npm start
 ```
-
-## Author
-Mohamed Azouaoui
-
-## License
-This code is released under the MIT license.
