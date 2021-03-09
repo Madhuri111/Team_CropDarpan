@@ -1,15 +1,16 @@
 import React, { Fragment } from 'react';
 
 import Header from '../UI/Header/Header';
-import Sections from '../sections/Sections';
+import Home from '../sections/Home/Home';
 import Nav from '../UI/Nav/Nav';
 
 const Layout = () => {
   return (
   <div>     
   <Nav />
-        <Sections />
-      </div>   );
+    <Home />
+        </div>
+        );
 };
 
 export default Layout;

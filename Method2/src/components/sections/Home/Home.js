@@ -1,10 +1,10 @@
 
 import Section from '../../../HOC/Section';
 import Link from '../../UI/Link/Link';
-import sr4 from '../../images/cotton.png'
-import sr1 from '../../images/sugar-cane.png'
-import sr2 from '../../images/sunflower.png'
-import sr3 from '../../images/wheat.png'
+import sr4 from '../../images/a.png'
+import sr1 from '../../images/b.png'
+import sr2 from '../../images/c.png'
+import sr3 from '../../images/d.png'
 
 import React, {Component} from "react"
 import {Button} from 'react-bootstrap'
@@ -17,37 +17,37 @@ import {Card, CardGroup,CardText, CardBody, CardTitle, CardSubtitle, CardImg} fr
 const home = () => {
 	return (
 		<div>
-		<CardGroup>
-		<Card style={{ width: 10 ,height:5}}>
+		<CardGroup style={{padding: 90}}>
+		<Card style={{ width: 10 }}>
 		<CardImg top width="100%" src={sr4} ></CardImg>
 		<CardBody>
-		<CardTitle tag="h5">Card title</CardTitle>
-		<CardText>Cotton Crop </CardText>
-		<Button>Button</Button>
+		<CardTitle tag="h1">Cotton</CardTitle>
+		<CardText> </CardText>
+		<Button>View</Button>
 		</CardBody>
 		</Card>
 		<Card style={{ width: 10 }}>
 		<CardImg top width="100%" src={sr1} ></CardImg>
 		<CardBody>
-		<CardTitle tag="h5">Card title</CardTitle>
-		<CardText>Sugar Cane </CardText>
-		<Button>Button</Button>
+		<CardTitle tag="h1">Sugar Cane</CardTitle>
+		<CardText> </CardText>
+		<Button>View</Button>
 		</CardBody>
 		</Card>
 		<Card style={{ width: 10 }}>
 		<CardImg top width="100%" src={sr2} ></CardImg>
 		<CardBody>
-		<CardTitle tag="h5">Card title</CardTitle>
-		<CardText>Sunflower </CardText>
-		<Button>Button</Button>
+		<CardTitle tag="h1">Sunflower</CardTitle>
+		<CardText> </CardText>
+		<Button>View</Button>
 		</CardBody>
 		</Card>
 		<Card style={{ width: 10 }}>
 		<CardImg top width="100%" src={sr3} ></CardImg>
 		<CardBody>
-		<CardTitle tag="h5">Card title</CardTitle>
-		<CardText>Wheat </CardText>
-		<Button>Button</Button>
+		<CardTitle tag="h1">Wheat</CardTitle>
+		<CardText> </CardText>
+		<Button>View</Button>
 		</CardBody>
 		</Card>
 		</CardGroup>
