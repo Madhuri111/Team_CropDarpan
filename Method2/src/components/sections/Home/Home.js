@@ -1,30 +1,59 @@
-import React from 'react';
 
 import Section from '../../../HOC/Section';
 import Link from '../../UI/Link/Link';
+import sr4 from '../../images/cotton.png'
+import sr1 from '../../images/sugar-cane.png'
+import sr2 from '../../images/sunflower.png'
+import sr3 from '../../images/wheat.png'
+
+import React, {Component} from "react"
+import {Button} from 'react-bootstrap'
+//import Card from "react-bootstrap/Card";
+//import {Grid, Card, Icon, Image,CardGroup } from 'semantic-ui-react'
+//import {  CardImg, CardText, CardBody,  CardTitle, CardSubtitle, Button
+//} from 'reactstrap';
+import {Card, CardGroup,CardText, CardBody, CardTitle, CardSubtitle, CardImg} from 'reactstrap';
 
 const home = () => {
-  return (
-    <Section id='home'>
-      <div>
-        <div
-          className='home-content p-5'
-        >
-          <div className='intro container text-center text-light'>
-            <h1 className='title'>WELCOME to CROP DARPAN</h1>
-	    <h2> A Crop Diagnostic Tool </h2>
-	    <p><b> IIIT Hyderabad and Professor Jayashankar Telangana State Agricultural University</b></p>
-            <Link target='about' classes='btn btn-info rounded-0 mr-2'>
-              Learn More
-            </Link>
-            <Link target='contact' classes='btn btn-light text-dark rounded-0'>
-              Contact Us
-            </Link>
-          </div>
-        </div>
-      </div>
-    </Section>
-  );
+	return (
+		<div>
+		<CardGroup>
+		<Card style={{ width: 10 ,height:5}}>
+		<CardImg top width="100%" src={sr4} ></CardImg>
+		<CardBody>
+		<CardTitle tag="h5">Card title</CardTitle>
+		<CardText>Cotton Crop </CardText>
+		<Button>Button</Button>
+		</CardBody>
+		</Card>
+		<Card style={{ width: 10 }}>
+		<CardImg top width="100%" src={sr1} ></CardImg>
+		<CardBody>
+		<CardTitle tag="h5">Card title</CardTitle>
+		<CardText>Sugar Cane </CardText>
+		<Button>Button</Button>
+		</CardBody>
+		</Card>
+		<Card style={{ width: 10 }}>
+		<CardImg top width="100%" src={sr2} ></CardImg>
+		<CardBody>
+		<CardTitle tag="h5">Card title</CardTitle>
+		<CardText>Sunflower </CardText>
+		<Button>Button</Button>
+		</CardBody>
+		</Card>
+		<Card style={{ width: 10 }}>
+		<CardImg top width="100%" src={sr3} ></CardImg>
+		<CardBody>
+		<CardTitle tag="h5">Card title</CardTitle>
+		<CardText>Wheat </CardText>
+		<Button>Button</Button>
+		</CardBody>
+		</Card>
+		</CardGroup>
+		</div>
+
+	);
 };
 
 export default home;
